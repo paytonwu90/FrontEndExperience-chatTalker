@@ -52,8 +52,6 @@ table {
   border-spacing: 0;
 }
 
-/* _variables.scss */
-/* _base.scss */
 body {
   font-family: "Noto Sans TC", "Microsoft JhengHei", sans-serif;
   line-height: 1.5;
@@ -79,7 +77,6 @@ sub {
   vertical-align: sub;
 }
 
-/* _grid.scss */
 .container {
   max-width: 1120px;
   /* 1088 + 16 + 16 */
@@ -94,46 +91,77 @@ sub {
   }
 }
 
-/* _utilities */
-.text-primary {
-  color: #56C4C5;
-}
-
-.text-white {
-  color: #fff;
-}
-
-.bg-primary {
-  background-color: #56C4C5;
-}
-
-.border {
-  border: 1px solid #000;
-}
-
-.border-primary {
-  border-color: #56C4C5;
-}
-
-.d-flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.justify-content-between {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+.navbarOuterContainer {
+  /* margin-bottom: 30px; */
 }
 
 @media (max-width: 767px) {
-  .d-sm-none {
-    display: none;
+  .navbarOuterContainer {
+    /* margin-bottom: 0; */
+    border-bottom: 2px solid #FFD153;
   }
 }
 
-/* _components */
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.navbar .logoWrapper {
+  width: 218px;
+}
+
+@media (max-width: 767px) {
+  .navbar .logoWrapper {
+    width: 130px;
+  }
+}
+
+.navbar-btn {
+  display: inline-block;
+  color: #fff;
+  background-color: #FF5D50;
+  padding: 8px 32px;
+  border-radius: 22px;
+  -webkit-transition: background-color .15s ease-in-out;
+  transition: background-color .15s ease-in-out;
+}
+
+.navbar-btn:hover {
+  background-color: #ff1604;
+}
+
+.goTop {
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 71px;
+  height: 71px;
+  bottom: 20px;
+  right: 40px;
+  font-weight: 700;
+  color: #fff;
+  background-color: #56C4C5;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
 .btn {
   display: inline-block;
   border: 1px solid transparent;
@@ -158,8 +186,7 @@ sub {
   border-color: #35999a;
 }
 
-/* _page.scss */
-.header {
+.indexHeader {
   padding-bottom: 117px;
   margin-bottom: 100px;
   background-image: url("../image/bg_home.svg");
@@ -169,7 +196,7 @@ sub {
 }
 
 @media (max-width: 767px) {
-  .header {
+  .indexHeader {
     background-image: none;
     background-position: 0 100%;
     padding-bottom: 32px;
@@ -177,57 +204,8 @@ sub {
   }
 }
 
-.header .navbarOuterContainer {
-  margin-bottom: 30px;
-}
-
-@media (max-width: 767px) {
-  .header .navbarOuterContainer {
-    margin-bottom: 0;
-    border-bottom: 2px solid #FFD153;
-  }
-}
-
-.header .navbar {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding-top: 24px;
-  padding-bottom: 24px;
-}
-
-.header .navbar .logoWrapper {
-  width: 218px;
-}
-
-@media (max-width: 767px) {
-  .header .navbar .logoWrapper {
-    width: 130px;
-  }
-}
-
-.header .navbar-btn {
-  display: inline-block;
-  color: #fff;
-  background-color: #FF5D50;
-  padding: 8px 32px;
-  border-radius: 22px;
-  -webkit-transition: background-color .15s ease-in-out;
-  transition: background-color .15s ease-in-out;
-}
-
-.header .navbar-btn:hover {
-  background-color: #ff1604;
-}
-
 .banner {
-  padding-top: 158px;
+  padding-top: 188px;
   padding-bottom: 158px;
   background-image: url("../image/home.svg");
   background-repeat: no-repeat;
@@ -792,33 +770,5 @@ h2 {
 .dot.active {
   width: 16px;
   background-color: #FFD153;
-}
-
-.footer {
-  background-color: #F5F5F5;
-  text-align: center;
-  padding: 16px 0;
-}
-
-.goTop {
-  position: fixed;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 71px;
-  height: 71px;
-  bottom: 20px;
-  right: 40px;
-  font-weight: 700;
-  color: #fff;
-  background-color: #56C4C5;
-  border-radius: 50%;
-  cursor: pointer;
 }
 /*# sourceMappingURL=all.css.map */

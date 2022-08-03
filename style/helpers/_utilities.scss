@@ -1,0 +1,28 @@
+.text-primary {
+  color: $primary;
+}
+.text-white {
+  color: #fff;
+}
+.bg-primary {
+  background-color: $primary;
+}
+
+.border {
+  border: 1px solid #000;
+}
+.border-primary {
+  border-color: $primary;
+}
+
+.d-flex {
+  display: flex;
+}
+.justify-content-between {
+  justify-content: space-between;
+}
+.d-sm-none {
+  @include mobile {
+    display: none;
+  }
+}

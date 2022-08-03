@@ -1,0 +1,15 @@
+.goTop {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 71px;
+  height: 71px;
+  bottom: 20px;
+  right: 40px;
+  font-weight: 700;
+  color: #fff;
+  background-color: $primary;
+  border-radius: 50%;
+  cursor: pointer;
+}

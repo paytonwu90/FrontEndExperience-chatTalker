@@ -1,0 +1,31 @@
+.navbarOuterContainer {
+  /* margin-bottom: 30px; */
+  @include mobile {
+    /* margin-bottom: 0; */
+    border-bottom: 2px solid #FFD153;
+  }
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  .logoWrapper {
+    width: 218px;
+    @include mobile {
+      width: 130px;
+    }
+  }
+  &-btn {
+    display: inline-block;
+    color: #fff;
+    background-color: #FF5D50;
+    padding: 8px 32px;
+    border-radius: 22px;
+    transition: background-color .15s ease-in-out;
+    &:hover {
+      background-color: darken(#FF5D50, 15%);
+    }
+  }
+}
