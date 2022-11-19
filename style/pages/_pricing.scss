@@ -1,0 +1,185 @@
+.pricingHeader {
+  background-color: #F7F9FD;
+  background-image: url('/image/banner.svg');
+  background-repeat: no-repeat;
+  background-position: 100% 0;
+  background-size: contain;
+  border-bottom-left-radius: 300px;
+  margin-bottom: 100px;
+  @include mobile {
+    background-position-y: 90px;
+  }
+  @media (max-width: 440px) {
+    background-image: url('/image/banner_sm.svg');
+    background-position: left 0;
+    border-bottom-left-radius: 120px;
+    margin-bottom: 60px;
+  }
+}
+.pricingBanner {
+  padding-top: 92px;
+  padding-bottom: 180px;
+  @include mobile {
+    padding-top: 48px;
+    padding-bottom: 360px;
+  }
+}
+.pricingBanner-title {
+  /* 有共通 */
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  @include mobile {
+    font-size: 32px;
+  }
+}
+
+.plan {
+  margin-bottom: 76px;
+  @include mobile {
+    margin-bottom: 36px;
+  }
+  h2 {
+    margin-bottom: 48px;
+    @include mobile {
+      margin-bottom: 24px;
+    }
+  }
+}
+.quantityBtns {
+  margin-bottom: 64px;
+  display: flex;
+  justify-content: center;
+  white-space: nowrap;
+  overflow: auto;
+  @include mobile {
+    justify-content: start;
+    padding-bottom: 16px;
+    margin: 0 -6px 16px -6px;
+  }
+  li {
+    padding: 0 8px;
+    @include mobile {
+      padding: 0 6px;
+    }
+  }
+}
+.selectBtn {
+  &.active, &:hover {
+    color: #fff;
+    background-color: $primary;
+  }
+}
+.planDetail {
+  width: 42%;
+  min-width: 410px;
+  margin: 0 20px 24px 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px #00000014;
+  @include mobile {
+    width: 100%;
+    min-width: auto;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  &-title {
+    font-size: 24px;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+    @include mobile {
+      padding: 16px 0;
+    }
+  }
+  &-body {
+    padding: 32px 24px;
+    @include mobile {
+      padding: 24px 16px;
+    }
+  }
+  &-infoItem {
+    align-items: flex-start;
+    img {
+      margin-top: 4px;
+      margin-right: 12px;
+      @include mobile {
+        margin-right: 16px;
+      }
+    }
+  }
+}
+
+.faq {
+  margin-bottom: 100px;
+  @include mobile {
+    margin-bottom: 60px;
+  }
+  & .container {
+    max-width: 904px;
+    @include mobile {
+      max-width: 375px;
+    }
+  }
+  h2 {
+    margin-bottom: 48px;
+    @include mobile {
+      margin-bottom: 32px;
+    }
+  }
+}
+.accordion {
+  &-item {
+    margin-bottom: 16px;
+  }
+  &-button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: #fff;
+    font-size: 18px;
+    font-family: inherit;
+    text-align: left;
+    padding: 16px 32px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: color .4s ease;
+    @include mobile {
+      font-size: 16px;
+      padding: 16px;
+    }
+    &:not(.collapsed) {
+      color: $primary;
+      &::after {
+        background-image: url('../../image/icon_minus.svg');
+      }
+    }
+    &::after {
+      content: '';
+      width: 20px;
+      height: 20px;
+      margin-left: auto;
+      background-image: url('../../image/icon_plus.svg');
+      background-repeat: no-repeat;
+      background-position: center;
+      @include mobile {
+        width: 16px;
+        height: 16px;
+      }
+    }
+  }
+  &-collapse {
+    overflow: hidden;
+    transition: max-height .4s ease-in-out;
+    &.collapsed {
+      max-height: 0;
+    }
+  }
+  &-body {
+    color: #747474;
+    padding: 8px 32px 32px 32px;
+    @include mobile {
+      padding: 0 16px 24px 16px;
+    }
+  }
+}

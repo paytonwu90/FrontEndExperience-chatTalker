@@ -5,7 +5,12 @@
   border-radius: 27px;
   transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
   cursor: pointer;
+  user-select: none;
+  @include mobile {
+    padding: 8px 16px;
+  }
 }
+
 .btn-primary {
   color: #fff;
   background-color: $primary;

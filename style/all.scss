@@ -3,11 +3,15 @@
 
 @import "./helpers/variables";
 @import "./helpers/mixins";
+@import "./helpers/utilities";
 
 @import "./layout/grid";
+@import "./layout/footer";
 @import "./layout/navbar";
 @import "./layout/goTop";
 
 @import "./components/buttons";
 
 @import "./pages/index";
+@import "./pages/pricing";
+
