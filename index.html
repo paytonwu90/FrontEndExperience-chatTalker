@@ -4,9 +4,11 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
   <link rel="stylesheet" href="css/all.css">
   <title>ChatTalker 最全面的聊天機器人</title>
 </head>
@@ -129,65 +131,114 @@
   <div class="ballImgWrapper"><img src="./image/ball03.svg" alt=""></div>
   <div class="container">
     <h2>好評如潮</h2>
-    <ul class="recommandationList">
-      <li class="recommandationItem">
-        <div class="imgWrapper"><img src="./image/user01.jpg" alt="user-pic-1"></div>
-        <p class="recommandationItem-content">原來聊天機器人可以這麼有人性！團隊有完整的行銷計畫提供數位整合，讓我們公司的產品用更活潑的方式讓使用者認識。</p>
-        <div class="recommandationItem-footer">
-          <h3>清心寡慾設計公司</h3>
-          <div class="d-flex justify-content-between">
-            <p>Lina 執行長</p>
-            <div class="rate">
-              <img src="./image/icon_star.svg" alt="icon-star">
-              <img src="./image/icon_star.svg" alt="icon-star">
-              <img src="./image/icon_star.svg" alt="icon-star">
-              <img src="./image/icon_star.svg" alt="icon-star">
-              <img src="./image/icon_star.svg" alt="icon-star">
+    <div class="swiper">
+      <ul class="recommandationList swiper-wrapper">
+        <li class="recommandationItem swiper-slide">
+          <div class="imgWrapper"><img src="./image/user01.jpg" alt="user-pic-1"></div>
+          <p class="recommandationItem-content">原來聊天機器人可以這麼有人性！團隊有完整的行銷計畫提供數位整合，讓我們公司的產品用更活潑的方式讓使用者認識。</p>
+          <div class="recommandationItem-footer">
+            <h3>清心寡慾設計公司</h3>
+            <div class="d-flex justify-content-between">
+              <p>Lina 執行長</p>
+              <div class="rate">
+                <img src="./image/icon_star.svg" alt="icon-star">
+                <img src="./image/icon_star.svg" alt="icon-star">
+                <img src="./image/icon_star.svg" alt="icon-star">
+                <img src="./image/icon_star.svg" alt="icon-star">
+                <img src="./image/icon_star.svg" alt="icon-star">
+              </div>
             </div>
           </div>
-        </div>
-      </li>
-      <li class="recommandationItem d-sm-none">
-        <div class="imgWrapper"><img src="./image/user02.jpg" alt="user-pic"></div>
-        <p class="recommandationItem-content">團隊很積極的協助行銷追蹤，針對機器人進行優化，讓我們一個月內提高10000個追蹤者，客戶體驗回饋很正面！</p>
-        <div class="recommandationItem-footer">
-          <h3>subwhat 行銷公司</h3>
-          <div class="d-flex justify-content-between">
-            <p>Zoe 活動長</p>
-            <div class="rate">
-              <img src="./image/icon_star.svg" alt="icon-star">
-              <img src="./image/icon_star.svg" alt="icon-star">
-              <img src="./image/icon_star.svg" alt="icon-star">
-              <img src="./image/icon_star.svg" alt="icon-star">
-              <img src="./image/icon_star.svg" alt="icon-star">
+        </li>
+        <li class="recommandationItem swiper-slide">
+          <div class="imgWrapper"><img src="./image/user02.jpg" alt="user-pic"></div>
+          <p class="recommandationItem-content">團隊很積極的協助行銷追蹤，針對機器人進行優化，讓我們一個月內提高10000個追蹤者，客戶體驗回饋很正面！</p>
+          <div class="recommandationItem-footer">
+            <h3>subwhat 行銷公司</h3>
+            <div class="d-flex justify-content-between">
+              <p>Zoe 活動長</p>
+              <div class="rate">
+                <img src="./image/icon_star.svg" alt="icon-star">
+                <img src="./image/icon_star.svg" alt="icon-star">
+                <img src="./image/icon_star.svg" alt="icon-star">
+                <img src="./image/icon_star.svg" alt="icon-star">
+                <img src="./image/icon_star.svg" alt="icon-star">
+              </div>
             </div>
           </div>
-        </div>
-      </li>
-      <li class="recommandationItem d-sm-none">
-        <div class="imgWrapper"><img src="./image/user03.jpg" alt="user-pic-3"></div>
-        <p class="recommandationItem-content">經營了好久的IG，一直無法提升粉絲數，和團隊合作後，才知道可以用聊天機器人玩這麼豐富的行銷活動！太讚拉～</p>
-        <div class="recommandationItem-footer">
-          <h3>油土伯</h3>
-          <div class="d-flex justify-content-between">
-            <p>HowBig</p>
-            <div class="rate">
-              <img src="./image/icon_star.svg" alt="icon-star">
-              <img src="./image/icon_star.svg" alt="icon-star">
-              <img src="./image/icon_star.svg" alt="icon-star">
-              <img src="./image/icon_star.svg" alt="icon-star">
-              <img src="./image/icon_star.svg" alt="icon-star">
+        </li>
+        <li class="recommandationItem swiper-slide">
+          <div class="imgWrapper"><img src="./image/user03.jpg" alt="user-pic-3"></div>
+          <p class="recommandationItem-content">經營了好久的IG，一直無法提升粉絲數，和團隊合作後，才知道可以用聊天機器人玩這麼豐富的行銷活動！太讚拉～</p>
+          <div class="recommandationItem-footer">
+            <h3>油土伯</h3>
+            <div class="d-flex justify-content-between">
+              <p>HowBig</p>
+              <div class="rate">
+                <img src="./image/icon_star.svg" alt="icon-star">
+                <img src="./image/icon_star.svg" alt="icon-star">
+                <img src="./image/icon_star.svg" alt="icon-star">
+                <img src="./image/icon_star.svg" alt="icon-star">
+                <img src="./image/icon_star.svg" alt="icon-star">
+              </div>
             </div>
           </div>
-        </div>
-      </li>
-    </ul>
-    <ul class="carouselIndicators">
-      <li class="dot"></li>
-      <li class="dot"></li>
-      <li class="dot"></li>
-      <li class="dot active"></li>
-    </ul>
+        </li>
+        <li class="recommandationItem swiper-slide">
+          <div class="imgWrapper"><img src="./image/user01.jpg" alt="user-pic-1"></div>
+          <p class="recommandationItem-content">原來聊天機器人可以這麼有人性！團隊有完整的行銷計畫提供數位整合，讓我們公司的產品用更活潑的方式讓使用者認識。</p>
+          <div class="recommandationItem-footer">
+            <h3>清心寡慾設計公司</h3>
+            <div class="d-flex justify-content-between">
+              <p>Lina 執行長</p>
+              <div class="rate">
+                <img src="./image/icon_star.svg" alt="icon-star">
+                <img src="./image/icon_star.svg" alt="icon-star">
+                <img src="./image/icon_star.svg" alt="icon-star">
+                <img src="./image/icon_star.svg" alt="icon-star">
+                <img src="./image/icon_star.svg" alt="icon-star">
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="recommandationItem swiper-slide">
+          <div class="imgWrapper"><img src="./image/user02.jpg" alt="user-pic"></div>
+          <p class="recommandationItem-content">2團隊很積極的協助行銷追蹤，針對機器人進行優化，讓我們一個月內提高10000個追蹤者，客戶體驗回饋很正面！</p>
+          <div class="recommandationItem-footer">
+            <h3>subwhat 行銷公司</h3>
+            <div class="d-flex justify-content-between">
+              <p>Zoe 活動長</p>
+              <div class="rate">
+                <img src="./image/icon_star.svg" alt="icon-star">
+                <img src="./image/icon_star.svg" alt="icon-star">
+                <img src="./image/icon_star.svg" alt="icon-star">
+                <img src="./image/icon_star.svg" alt="icon-star">
+                <img src="./image/icon_star.svg" alt="icon-star">
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="recommandationItem swiper-slide">
+          <div class="imgWrapper"><img src="./image/user03.jpg" alt="user-pic-3"></div>
+          <p class="recommandationItem-content">2經營了好久的IG，一直無法提升粉絲數，和團隊合作後，才知道可以用聊天機器人玩這麼豐富的行銷活動！太讚拉～</p>
+          <div class="recommandationItem-footer">
+            <h3>油土伯</h3>
+            <div class="d-flex justify-content-between">
+              <p>HowBig</p>
+              <div class="rate">
+                <img src="./image/icon_star.svg" alt="icon-star">
+                <img src="./image/icon_star.svg" alt="icon-star">
+                <img src="./image/icon_star.svg" alt="icon-star">
+                <img src="./image/icon_star.svg" alt="icon-star">
+                <img src="./image/icon_star.svg" alt="icon-star">
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+    </div>
   </div>
 </div>
 
@@ -198,7 +249,8 @@
 
 <div class="footer">© 2022 chatTalker. All Rights Reserved.</div>
 
-<div class="goTop">TOP</div>
+<div class="goTop" onclick="goTop();">TOP</div>
 
+<script src="/js/all.js"></script>
 </body>
 </html>

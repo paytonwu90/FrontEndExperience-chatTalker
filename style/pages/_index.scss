@@ -313,9 +313,9 @@ h2 {
     margin-bottom: 60px;
   }
   h2 {
-    margin-bottom: 104px;
+    margin-bottom: 48px;
     @include mobile {
-      margin-bottom: 88px;
+      margin-bottom: 32px;
     }
   }
   .ballImgWrapper {
@@ -334,16 +334,17 @@ h2 {
   }
 }
 .recommandationList {
-  display: flex;
-  margin-left: -8px;
-  margin-right: -8px;
+  //display: flex;
+  //margin-left: -8px;
+  //margin-right: -8px;
   margin-bottom: 24px;
+  padding-top: 56px; //補上 imgWrapper 的 top:-56px; 不然會被 .swiper 的 overflow:hidden 吃掉
 }
 .recommandationItem {
   position: relative;
   width: 33.33%;
-  margin-left: 8px;
-  margin-right: 8px;
+  /* margin-left: 8px; */
+  /* margin-right: 8px; */
   padding: 48px 32px 24px 32px;
   background-color: #fff;
   border-radius: 12px;
@@ -374,20 +375,23 @@ h2 {
     margin-bottom: 8px;
   }
 }
-.carouselIndicators {
-  display: flex;
-  justify-content: center;
+
+/* override style of swiper */
+.swiper {
+  margin: 0 -8px;
+  padding: 0 8px;
+  padding-bottom: 24px;
 }
-.dot {
+.swiper-pagination {
+  bottom: 0;
+}
+.swiper-pagination-bullet {
   width: 10px;
   height: 10px;
-  background-color: #DDDDDD;
-  margin-left: 4px;
-  margin-right: 4px;
+}
+.swiper-pagination-bullet-active {
+  width: 16px;
+  height: 10px;
+  background-color: #FFD153;
   border-radius: 50px;
-  cursor: pointer;
-  &.active {
-    width: 16px;
-    background-color: #FFD153;
-  }
 }
