@@ -12,4 +12,5 @@
   background-color: $primary;
   border-radius: 50%;
   cursor: pointer;
+  z-index: 10; //higher than Swiper
 }

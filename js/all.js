@@ -32,9 +32,9 @@ if (typeof window.Swiper === 'function') { //prevent js error in pricing page
     spaceBetween: 16,
     slidesPerView: 1,
     loop: true,
-    /* autoplay: {
+    autoplay: {
       delay: 5000,
-    }, */
+    },
     breakpoints: {
       768: {
         slidesPerView: 3
